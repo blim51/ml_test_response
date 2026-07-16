@@ -1,0 +1,62 @@
+h1 {
+	background-color: #b9d2d6;
+	color: #009900;
+	font-size: 40px;
+	}
+body {
+	background-color: #e3edd6;
+	}
+p {
+	margin: 5px;
+	font-family: Comfortaa;
+	font-size: 16px;
+	}
+	
+.center {
+	text-align: center;
+}
+
+ul.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #b9b9d6;
+}
+
+li.lfloat {
+	float: left;
+}
+
+li.rfloat {
+	float: right;
+}
+
+li.block a {
+	display: block;
+	color: #a52a2a;
+	padding: 24px;
+	text-decoration: none;
+	background-color: #b9b9d6;
+	font-family: Comfortaa;
+	font-size: 16px;
+}
+
+/* Change the link color on hover */
+li.block a:hover {
+	background-color: #555;
+	color: white;
+}
+
+li.big {
+	font-size: 20px;
+}
+
+table {
+	text-align:center;
+}
+
+
+

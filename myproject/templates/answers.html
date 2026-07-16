@@ -1,5 +1,19 @@
-<form action="/form/" method="post">
-    {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="Submit">
-</form>
+{% load static %}
+<!DOCTYPE HTML>
+<HTML>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+    <link href="{% static 'myproject/style.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <p>
+        Good morning everyone! <br\>    
+        <!-- form is different style than <p> ---->
+        <form action="/form/" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Submit">
+        </form>
+    </p>
+</body>
+</HTML>

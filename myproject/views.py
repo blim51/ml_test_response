@@ -9,7 +9,13 @@ def handle_form(request):
     if request.method == "POST":
         form = my_form(request.POST)
         if form.is_valid():
-            # process data first, and then
+            # process data first, and then store it
+
+            # from .predictions import handle_data
+            # result = handle_data(form.request.get_data("responses"))
+            # this may be an incorrect approach since we would want the model
+            # to be already trained etc and available and so it's not as simple as calling a method from the file with model logic
+
             return HttpResponseRedirect("/landing/")
             # return HttpResponseRedirect("/form_submitted/, body = form.answers")
             # or for our purposes have an if statement on form.answers like 
