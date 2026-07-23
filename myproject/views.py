@@ -2,6 +2,7 @@ from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from .forms import my_form
+from .predictions import query_model
 
 def home(request):
     return HttpResponse("Home page", status = 200) # get
@@ -10,11 +11,17 @@ def handle_form(request):
         form = my_form(request.POST)
         if form.is_valid():
             # process data first, and then store it
+            
+            # print(form.cleaned_data["answers3"]) # 2
 
-            # from .predictions import handle_data
-            # result = handle_data(form.request.get_data("responses"))
-            # this may be an incorrect approach since we would want the model
-            # to be already trained etc and available and so it's not as simple as calling a method from the file with model logic
+            result = query_model(form.cleaned_data)
+            if (result == 1):
+                print("E")
+            elif (result == 0):
+                print("I")
+            else:
+                print("shouldn't get here a")
+
 
             return HttpResponseRedirect("/landing/")
             # return HttpResponseRedirect("/form_submitted/, body = form.answers")

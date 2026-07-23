@@ -1,0 +1,62 @@
+gen_data generated with ChatGPT using these questions from Psych2Go Youtube video (https://www.youtube.com/watch?v=she33LZsP7k) as a base;
+Scored with 10-26 == "I" and 27-40 == "E" with A = 1, B = 2, C = 3, D = 4, as per the quiz in the video.
+
+Someone you don't know that well calls you over and talks about their personal woes and struggles. You had a five-minute conversation. You:
+A. Half attentively listen.
+B. Interrupt and say that you're too busy for this.
+C. Work can wait; it's good to empathize with them.
+D. Engage in a long, drawn-out chat lasting longer than five minutes.
+
+Entering a party full of unfamiliar people, you realize your friend who invited you is nowhere to be found. You:
+A. Dart out and text your friend to ask where they are.
+B. Get inside awkwardly and look for them.
+C. Sit on a couch and strike up a chat with an approachable person.
+D. Barge in and insert yourself into a fun-loving circle. Your friend can wait.
+
+You're on an airplane with a stranger sitting beside you. You:
+A. Read a book, put on headphones, and sleep.
+B. Pretend they don't exist and respect their space.
+C. Talk to them and see if they want to have a conversation.
+D. Converse with them for the entire plane trip.
+
+You disagree with your colleague or classmate regarding a group project. You:
+A. Stay silent even if you disagree.
+B. Speak up but waver if they don't stop.
+C. Defend your point of view strongly.
+D. Rally the rest of the team to join the conversation.
+
+Your schedule is free over the weekend. You:
+A. Enjoy the day at home with no plans.
+B. Walk to the park by yourself and enjoy the sights and smells.
+C. Consider calling a friend for a lunch date.
+D. Pack your schedule and make plans with several friends as soon as possible.
+
+You have an important decision coming up, and your choice has grave consequences. You:
+A. Suffer from analysis paralysis and end up choosing an option you never intended.
+B. Relinquish the decision and ask someone else to make it for you.
+C. Make a decision but are stumped about what happens next.
+D. Make a decision quickly and delegate roles to your team.
+
+You notice your friend continuing bad habits that you'd rather have them stop. You:
+A. Don't say anything because you'd rather avoid conflict.
+B. Tell them about it gently.
+C. Call them out for their actions.
+D. Express your anger with conviction.
+
+Do you think it's easy for people to get to know you?
+A. No, even my friends don't know everything.
+B. Only my closest friends.
+C. I think I am, at least to my friends and family.
+D. I post about my life on social media every day.
+
+Can you have fun by yourself?
+A. That's the only time I have fun.
+B. Yes, I love my alone time.
+C. I'd rather be with a close friend or two.
+D. No, I need to be around people.
+
+You meet someone new for the first time. You:
+A. Say hi and part ways, not particularly interested in small talk.
+B. Have a short, casual conversation while maintaining some distance.
+C. Talk at length but leave the more obscure topics out.
+D. Talk as if you're already best friends.

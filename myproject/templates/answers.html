@@ -10,9 +10,19 @@
         Good morning everyone! <br\>    
         <!-- form is different style than <p> ---->
         <form action="/form/" method="post">
+
+            <!-- possible for loop for the questions -->
             {% csrf_token %}
-            {{ form }}
-            <input type="submit" value="Submit">
+            <h1> question 1 </h1> <br/>
+            
+            {{ form.answers1 }}
+            <h1> question 2 </h1> <br/>
+            {{ form.answers2 }}
+            
+            <h1> question 3 </h1> <br/>
+            <p>{{ form.answers3 }}</p>
+
+            <input type="submit" value="Submit"> <!-- button -->
         </form>
     </p>
 </body>
