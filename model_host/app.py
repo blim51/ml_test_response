@@ -34,6 +34,7 @@ def failure_response(message, code=404):
 def send_query():
     """
     Endpoint for getting result of questionaire from model
+    Expects field input_answers: int[10] array of question answers
     """
     body = json.loads(request.data)
     input_answers = body.get("answers")
