@@ -10,25 +10,16 @@ def handle_form(request):
     if request.method == "POST":
         form = my_form(request.POST)
         if form.is_valid():
-            # process data first, and then store it
-            
-            # print(form.cleaned_data["answers3"]) # 2
-
             result = query_model(form.cleaned_data)
-            if (result == 1):
-                print("E")
-            elif (result == 0):
-                print("I")
-            else:
-                print("shouldn't get here a")
-
-
-            return HttpResponseRedirect("/landing/")
-            # return HttpResponseRedirect("/form_submitted/, body = form.answers")
-            # or for our purposes have an if statement on form.answers like 
-            # (evaluate(form.answers)) -> 0 or 1 and then display page 1 or 2
+            # should be 0 or 1
+            return form_result(request, result)
     else: # GET
         form = my_form()
     return render(request, "answers.html", {"form" : form})
-    # alternatively?? this is a shortcut, remember
-    # otherwise we would load the template and fill stuff in
+def form_result(request, result):
+    if result == 1:
+        return render(request, "extrovert.html")
+    elif result == 0:
+        return render(request, "introvert.html")
+    print("Improper result returned from form")
+    return HttpResponseRedirect("/landing/")

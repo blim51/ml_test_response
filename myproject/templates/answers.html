@@ -6,51 +6,170 @@
     <link href="{% static 'myproject/style.css' %}" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <p>
-        Good morning everyone! <br\>    
+    <p> 
         <!-- form is different style than <p> ---->
         <form action="/form/" method="post">
 
-            <!-- possible for loop for the questions -->
-            {% csrf_token %}
-            <h1> question 1 </h1> <br/>
+            <!-- note: questions were copied over using ChatGPT to avoid manual copying here -->
             
+            {% csrf_token %}
+            <h1>Question 1</h1>
+            <div class="short-break"></div>
+
+            <h3>Someone you don't know that well calls you over and talks about their personal woes and struggles. You had a five-minute conversation. You:</h3>
+            <div class="short-break"></div>
+
+            <ol type="A">
+                <li>Half attentively listen.</li>
+                <li>Interrupt and say that you're too busy for this.</li>
+                <li>Work can wait, it's good to empathize with them.</li>
+                <li>Engage in a long, drawn-out chat, longer than five minutes.</li>
+            </ol>
+
             {{ form.answers1 }}
 
-            <h1> question 2 </h1> <br/>
+
+            <h1>Question 2</h1>
+            <div class="short-break"></div>
+
+            <h3>Entering a door, you burst open to see a party of unfamiliar people. Your friend, the person who invited you, is nowhere to be found. You:</h3>
+            <div class="short-break"></div>
+
+            <ol type="A">
+                <li>Dart out and text your friend to ask where they are.</li>
+                <li>Get inside awkwardly and look for them.</li>
+                <li>Sit on a couch and strike up a chat with an approachable person.</li>
+                <li>Barge in and insert yourself into a fun-loving circle. Your friend can wait.</li>
+            </ol>
 
             {{ form.answers2 }}
-            
-            <h1> question 3 </h1> <br/>
-            
-            <p>{{ form.answers3 }}</p>
-            
-            <h1> question 4 </h1> <br/>
-            
+
+
+            <h1>Question 3</h1>
+            <div class="short-break"></div>
+
+            <h3>You're in an airplane with a stranger beside you. You:</h3>
+            <div class="short-break"></div>
+
+            <ol type="A">
+                <li>Read a book, put on headphones, and sleep.</li>
+                <li>Pretend they don't exist and respect their space.</li>
+                <li>Talk to them and feel them out if they wanna have a conversation.</li>
+                <li>Converse with them for the entire plane trip.</li>
+            </ol>
+
+            {{ form.answers3 }}
+
+
+            <h1>Question 4</h1>
+            <div class="short-break"></div>
+
+            <h3>You disagree with your colleague or classmate regarding a group project. You:</h3>
+            <div class="short-break"></div>
+
+            <ol type="A">
+                <li>Just stay silent even if you disagree.</li>
+                <li>Speak up but waiver if they don't stop.</li>
+                <li>Defend your point of view strongly.</li>
+                <li>Rally up the rest of the team to join the conversation.</li>
+            </ol>
+
             {{ form.answers4 }}
 
-            <h1> question 5 </h1> <br/>
+
+            <h1>Question 5</h1>
+            <div class="short-break"></div>
+
+            <h3>Your schedule is free over the weekend. You:</h3>
+            <div class="short-break"></div>
+
+            <ol type="A">
+                <li>Enjoy the rest of the day with no plans at home.</li>
+                <li>Walk to the park by yourself and enjoy the sights and smells.</li>
+                <li>Consider calling your friend for a lunch date.</li>
+                <li>Pack up your schedule and make plans with several friends ASAP.</li>
+            </ol>
 
             {{ form.answers5 }}
-            
-            <h1> question 6 </h1> <br/>
-            
-            <p>{{ form.answers6 }}</p>
-            
-            <h1> question 7 </h1> <br/>
-            
+
+
+            <h1>Question 6</h1>
+            <div class="short-break"></div>
+
+            <h3>You have an important decision coming up and your choice has grave consequences. You:</h3>
+            <div class="short-break"></div>
+
+            <ol type="A">
+                <li>Suffer from analysis paralysis and end up choosing an option you never intended.</li>
+                <li>Relinquish your position and ask someone else to do it for you.</li>
+                <li>Make a decision but are at a stump on what happens next.</li>
+                <li>Make a decision fast and delegate the roles to your team quickly.</li>
+            </ol>
+
+            {{ form.answers6 }}
+
+
+            <h1>Question 7</h1>
+            <div class="short-break"></div>
+
+            <h3>You notice your friend continuing bad habits that you'd rather have them stop. You:</h3>
+            <div class="short-break"></div>
+
+            <ol type="A">
+                <li>Don't say anything, you'd rather not create conflict.</li>
+                <li>Tell them about it gently.</li>
+                <li>Call them out for their actions.</li>
+                <li>Express your anger with conviction.</li>
+            </ol>
+
             {{ form.answers7 }}
 
-            <h1> question 8 </h1> <br/>
+
+            <h1>Question 8</h1>
+            <div class="short-break"></div>
+
+            <h3>Do you think it's easy for people to get to know you?</h3>
+            <div class="short-break"></div>
+
+            <ol type="A">
+                <li>No, even my friends don't know everything.</li>
+                <li>Only my closest friends.</li>
+                <li>I think I am, at least to my friends and family.</li>
+                <li>I post about my life on social media every day.</li>
+            </ol>
 
             {{ form.answers8 }}
-            
-            <h1> question 9 </h1> <br/>
-            
-            <p>{{ form.answers9 }}</p>
-            
-            <h1> question 10 </h1> <br/>
-            
+
+
+            <h1>Question 9</h1>
+            <div class="short-break"></div>
+
+            <h3>Can you have fun by yourself?</h3>
+            <div class="short-break"></div>
+
+            <ol type="A">
+                <li>That's the only time I have fun.</li>
+                <li>Yes, I love my alone time.</li>
+                <li>I'd rather be with a close friend or two.</li>
+                <li>No, I need to be around people.</li>
+            </ol>
+
+            {{ form.answers9 }}
+
+
+            <h1>Question 10</h1>
+            <div class="short-break"></div>
+
+            <h3>You meet someone new for the first time. You:</h3>
+            <div class="short-break"></div>
+
+            <ol type="A">
+                <li>Say hi and part ways, not particularly interested in small talk.</li>
+                <li>Have a short, casual conversation while maintaining a distance.</li>
+                <li>Talk at length but leave the obscure topics out the window.</li>
+                <li>Talk as if you're best friends.</li>
+            </ol>
+
             {{ form.answers10 }}
 
             <br/><br/><br/>

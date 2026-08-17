@@ -4,6 +4,8 @@ from pathlib import Path
 from dotenv import load_dotenv
 import requests
 
+# precondition: model is hosted on a server
+
 # get port
 ROOT_DIR = Path(__file__).resolve().parent.parent
 ENV_PATH = ROOT_DIR / ".env"
