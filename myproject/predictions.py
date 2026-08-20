@@ -3,18 +3,22 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 import requests
+from io import StringIO
 
 # precondition: model is hosted on a server
 
 # get port
 ROOT_DIR = Path(__file__).resolve().parent.parent
-ENV_PATH = ROOT_DIR / ".env"
-if ENV_PATH.exists():
-    load_dotenv(dotenv_path=ENV_PATH)
+settings = os.getenv("APPLICATION_SETTINGS")
+
+if settings:
+    load_dotenv(stream=StringIO(settings))
 else:
-    raise FileNotFoundError(f".env file not found at {ENV_PATH}")
-MODEL_PORT = os.getenv("MODEL_PORT")
-MODEL_ADDRESS = os.getenv("MODEL_ADDRESS")
+    ENV_PATH = ROOT_DIR / ".env"
+    if ENV_PATH.exists():
+        load_dotenv(dotenv_path=ENV_PATH)
+    else:
+        raise FileNotFoundError(f".env file not found at {ENV_PATH}")
 
 # precondition: cdata contains all fields correctly filled
 def query_model(cdata): # dict of cleaned data from questionaire
