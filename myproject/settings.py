@@ -42,7 +42,8 @@ if os.getenv("USE_CLOUD_SQL_AUTH_PROXY", None):
 # Define static storage via django-storages[google]
 GS_BUCKET_NAME = env("GS_BUCKET_NAME")
 STATICFILES_DIRS = []
-GS_QUERYSTRING_AUTH = False # fixes unauthenticated user attempts to load static files (form)
+GS_QUERYSTRING_AUTH = True
+GS_IAM_SIGN_BLOB = True
 GS_DEFAULT_ACL = None # fixes collectstatic error
 STORAGES = {
     "default": {
